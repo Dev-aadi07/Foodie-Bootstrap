@@ -14,8 +14,6 @@ A modern and responsive restaurant landing page built using **Bootstrap 5**. Thi
   <img src="images/preview.png" alt="Foodie Preview" width="100%">
 </p>
 
-> Replace `preview.png` with a screenshot of your homepage and place it in the root of your project.
-
 ---
 
 ## ✨ Features
