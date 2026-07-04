@@ -1,3 +1,98 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
 .card{
-  transition: 0.3s;
+    transition:.3s ease;
+    border:none;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.btn{
+    transition:.3s;
+}
+.hero img{
+    border-radius:25px;
+}
+.hero img{
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+
+.nav-link{
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+footer a{
+    transition:.3s;
+}
+
+footer a:hover{
+    color:#ffc107 !important;
+    padding-left:8px;
+}
+
+.form-control,
+.form-select{
+    border-radius:12px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    box-shadow:none;
+    border-color:#ffc107;
+}
+
+.card{
+    border-radius:18px;
+}
+
+.card img{
+    border-radius:18px 18px 0 0;
+}
+
+.btn{
+    border-radius:12px;
+}
+
+.reservation-box{
+    position: relative;
+    background-image: url("images/reserve.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0, 0, 0, 0.5);
+}
+
+.reservation-content{
+    position:relative;
+    z-index:2;
+
+    width:420px;
+
+    padding:50px;
+
+    color:white;
 }

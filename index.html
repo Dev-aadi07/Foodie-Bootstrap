@@ -11,13 +11,18 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+
     <link rel="stylesheet" href="style.css" />
     <title>Foodie</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 70px;">
       <div class="container">
-        <a class="navbar-brand" href="#">Foodie</a>
+        <a class="navbar-brand fw-bold fs-2" href="#">F<span class="text-warning">o</span>odie</a>
 
         <button
           class="navbar-toggler"
@@ -34,33 +39,33 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="#menu">Menu</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#why-us">About</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
 
-          <button class="btn btn-warning ms-lg-3">Reserve Table</button>
+          <a class="btn btn-warning ms-lg-3" href="#reservation">Reserve Table</a>
         </div>
       </div>
     </nav>
 
-    <section class="hero">
+    <section id="home" class="hero">
       <div class="container">
         <div class="row align-items-center py-5 mt-5">
           <!--Text col  -->
           <div class="col-lg-6">
-            <h1 class="display-4 fw-bold">Delicious Food Delivered Fresh</h1>
+            <h1 class="display-3 fw-bold">Delicious Food Delivered Fresh</h1>
 
             <p class="lead text-secondary">
               Experience mouth-watering dishes made with fresh ingredients,
@@ -89,9 +94,9 @@
       </div>
     </section>
 
-    <section class="popular-dishes">
+    <section id="menu" class="popular-dishes">
       <div class="container">
-        <h1 class="text-center fw-bold mb-3">Our Popular Dishes</h1>
+        <h2 class="text-center fw-bold mb-3">Our Popular Dishes</h2>
         <p class="text-center fw-bold mb-3">Freshly prepared with premium ingredients and served with love.</p>
         <div class="row g-4 py-5">
 
@@ -166,9 +171,9 @@
       </div>
     </section>
 
-    <section class="whyChooseUs">
+    <section id="why-us" class="whyChooseUs">
       <div class="container">
-        <h1 class="text-center fw-bold mb-3">Why Choose Us</h1>
+        <h2 class="text-center fw-bold mb-3">Why Choose Us</h2>
         <p class="text-center fw-bold mb-3">
           We serve delicious meals with fresh ingredients, quick service and exceptional quality.
         </p>
@@ -242,9 +247,162 @@
 
     </section>
 
-    <section class="reservation-form">
-      
-    </section>
+    <section id="reservation" class="reservation py-5">
+        <div class="container">
+
+          <h2 class="text-center fw-bold">
+            Reserve Your Table
+          </h2>
+
+          <div class="reservation-box rounded-5 overflow-hidden">
+
+            <div class="overlay"></div>
+
+            <div class="reservation-content">
+
+              <form>
+
+                <div class="mb-3">
+                  <label class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                  >
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                  >
+                </div>
+
+                <div class="row">
+
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Guests</label>
+
+                    <select class="form-select">
+                      <option>1 Person</option>
+                      <option>2 People</option>
+                      <option>3 People</option>
+                      <option>4 People</option>
+                      <option>5+ People</option>
+                    </select>
+
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Date</label>
+
+                    <input
+                      type="date"
+                      class="form-control"
+                    >
+                  </div>
+
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label">Time</label>
+
+                  <input
+                    type="time"
+                    class="form-control"
+                  >
+                </div>
+
+                <button class="btn btn-warning w-100 btn-lg">
+                  Reserve Now
+                </button>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <footer id="contact" class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+          <div class="row">
+
+            <!-- Brand -->
+             <div class="col-md-4 mb-4">
+              <h3 class="fw-bold text-warning">
+                Foodie
+              </h3>
+
+              <p class="text-light">
+                Freshly prepared meals made with love and
+                <br> served with premium quality ingredients.
+              </p>
+             </div>
+
+             <!-- Quick Links -->
+              <div class="col-md-4 mb-4">
+                <h5 class="fw-bold">
+                  Quick Links
+                </h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-light text-decoration-none">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-light text-decoration-none">
+                      Menu
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-light text-decoration-none">
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-light text-decoration-none">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Contact -->
+               <div class="col-md-4 mb-4">
+                  <h5 class="fw-bold">
+                    Contact
+                  </h5>
+                  
+                  <p>
+                    <i class="bi bi-geo-alt-fill text-warning"></i>
+                    Kolkata, India
+                  </p>
+                  <p>
+                    <i class="bi bi-telephone-fill text-warning"></i>
+                    +91 98765 43210
+                </p>
+                <p>
+                    <i class="bi bi-envelope-fill text-warning"></i>
+                    contact@foodie.com
+                </p>
+
+               </div>
+          </div>
+
+          <hr>
+          <p class="text-center mb-0">
+            &copy; 2026 Foodie. All Rights Reserved.
+          </p>
+          
+        </div>
+      </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   </body>
